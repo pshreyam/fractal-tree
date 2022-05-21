@@ -3,11 +3,20 @@ from OpenGL.GLUT import *
 from OpenGL.GLU import *
 
 
-angle1 = angle2 = 0.0
-moving = startx = starty = 0
-r = 0.0
-g = 1.0
-b = 0.0
+# Angles for rotating the tree for viewing purposes
+angle1: float = 0.0
+angle2: float = 0.0
+
+# Defining the motion when rotating the tree with the mouse
+# for viewing
+moving: int = 0
+startx: int = 0
+starty: int = 0
+
+# Defining the color
+r: float = 0.0
+g: float = 1.0
+b: float = 0.0
 
 
 def resize(width: int, height: int) -> None:
